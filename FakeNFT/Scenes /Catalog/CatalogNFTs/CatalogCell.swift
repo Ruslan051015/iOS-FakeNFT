@@ -1,10 +1,3 @@
-//
-//  TestCatalogCell.swift
-//  FakeNFT
-//
-//  Created by Георгий Ксенодохов on 13.02.2024.
-//
-
 import UIKit
 import SnapKit
 import Kingfisher
@@ -16,7 +9,7 @@ final class CatalogCell: UITableViewCell {
     private let nftImageView: UIImageView = {
         var image = UIImageView()
         image.clipsToBounds = true
-        image.contentMode = .scaleToFill
+        image.contentMode = .scaleAspectFill
         image.layer.cornerRadius = 12
         return image
     }()

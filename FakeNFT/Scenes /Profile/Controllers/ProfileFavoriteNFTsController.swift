@@ -17,7 +17,7 @@ class ProfileFavoriteNFTsController: UIViewController {
     
     private var gotNFTsData: Bool = false {
         didSet {
-            ProgressHUD.dismiss()
+          UIBlockingProgressHUD.hide()
         }
     }
     private var favoriteNFTs: [NFTModel] = [NFTModel]()
@@ -64,7 +64,7 @@ class ProfileFavoriteNFTsController: UIViewController {
                 self.favoriteNFTs = nftList
                 self.gotNFTsData = true
                 collectionView.reloadData()
-                ProgressHUD.dismiss()
+              UIBlockingProgressHUD.hide()
             }
         }).store(in: &subscriptions)
         
@@ -72,7 +72,7 @@ class ProfileFavoriteNFTsController: UIViewController {
             guard let self else { return }
             let action = UIAlertAction(title: buttonTitle, style: .cancel)
             AlertPresenterProfile.shared.presentAlert(title: title, message: message, actions: [action], target: self)
-            ProgressHUD.dismiss()
+          UIBlockingProgressHUD.hide()
         }
     }
     
@@ -81,7 +81,7 @@ class ProfileFavoriteNFTsController: UIViewController {
         view.backgroundColor = UIColor(named: ColorNames.white)
         view.addSubview(collectionView)
         view.addSubview(plugView)
-        ProgressHUD.show(interaction: false)
+      UIBlockingProgressHUD.show()
     }
     
     private func setupUILayout() {
@@ -127,7 +127,7 @@ extension ProfileFavoriteNFTsController: UICollectionViewDelegateFlowLayout {
 
 extension ProfileFavoriteNFTsController: UnlikerProtocol {
     func unlikeNFT(with id: String) {
-        ProgressHUD.show(interaction: false)
+      UIBlockingProgressHUD.show()
         
         var newFavoriteNFTsArray: [String] = []
         favoriteNFTs.forEach { nft in

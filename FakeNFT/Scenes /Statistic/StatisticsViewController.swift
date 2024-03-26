@@ -32,6 +32,7 @@ final class StatisticsViewController: UIViewController {
 		tableView.separatorStyle = .none
 		tableView.dataSource = self
 		tableView.delegate = self
+    tableView.allowsMultipleSelection = false
 		
 		return tableView
 	}()
@@ -169,6 +170,7 @@ extension StatisticsViewController: UITableViewDataSource {
 		let cellViewModel = viewModel.users[indexPath.item]
 		
 		cell.viewModel = cellViewModel
+    cell.selectionStyle = .none
 		
 		return cell
 	}

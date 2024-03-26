@@ -95,7 +95,7 @@ final class ProfileEditViewModel {
                     true
                 )
                 
-            case .failure(_):
+            case .failure:
                 self.alertInfo?(
                     NSLocalizedString(LocalizableKeys.profileMyNFTsLoadErrorTitle, comment: ""),
                     NSLocalizedString(LocalizableKeys.profileMyNFTsLoadErrorButton, comment: ""),

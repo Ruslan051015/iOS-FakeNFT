@@ -46,7 +46,7 @@ final class ProfileViewModel {
             switch result {
             case .success(let profile):
                 self.profile.send(profile)
-            case .failure(_):
+            case .failure:
                 self.alertInfo?(
                     NSLocalizedString(LocalizableKeys.profileMyNFTsLoadErrorTitle, comment: ""),
                     NSLocalizedString(LocalizableKeys.profileMyNFTsLoadErrorButton, comment: ""),

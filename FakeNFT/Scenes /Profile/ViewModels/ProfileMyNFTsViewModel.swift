@@ -45,7 +45,7 @@ final class ProfileMyNFTsViewModel {
                     nftList.append(nft)
                     gettingNFTs.leave()
                     
-                case .failure(_):
+                case .failure:
                     gotError += 1
                     gettingNFTs.leave()
                 }
@@ -114,7 +114,7 @@ final class ProfileMyNFTsViewModel {
                 getNFTs(by: profile.nfts)
                 self.favoriteNFTs = profile.likes
                 self.profile.send(profile)
-            case .failure(_):
+            case .failure:
                 self.alertInfo?(
                     NSLocalizedString(LocalizableKeys.profileMyNFTsLoadErrorTitle, comment: ""),
                     NSLocalizedString(LocalizableKeys.profileMyNFTsLoadErrorButton, comment: ""),

@@ -1,6 +1,6 @@
 import UIKit
 
-protocol NftCollectionCellDelegate {
+protocol NftCollectionCellDelegate: AnyObject {
 	func likeDidTap(id: String, isLiked: Bool)
 	func cartDidTap(id: String, isAdded: Bool)
 }

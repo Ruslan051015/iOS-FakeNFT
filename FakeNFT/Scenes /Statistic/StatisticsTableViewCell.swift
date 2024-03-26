@@ -43,7 +43,7 @@ final class StatisticsTableViewCell: UITableViewCell {
 	private lazy var informationView = {
 		let view = UIView()
 		view.translatesAutoresizingMaskIntoConstraints = false
-		view.backgroundColor = .statisticsCellBackground
+		view.backgroundColor = .ypLightGrey
 		view.layer.cornerRadius = 12
 		
 		return view

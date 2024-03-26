@@ -63,7 +63,7 @@
 "Profile.edit.labelSite" = "Site";
 "Profile.edit.updateDone" = "Done!";
 "Profile.edit.updateGreat" = "Great";
-"Profile.edit.updateChangesAreMade" = "Changes to the profile a made";
+"Profile.edit.updateChangesAreMade" = "Changes to the profile are made";
 "Profile.myNFTs.sortTitle" = "Sorting";
 "Profile.myNFTs.sortByPrice" = "By price";
 "Profile.myNFTs.sortByRating" = "By rating";
@@ -75,7 +75,7 @@
 "Profile.myNFTs.loadErrorSome" = "Unfortunately, some NFTs couldn't be loaded";
 "Profile.myNFTs.labelPrice" = "Price";
 "Profile.myNFTs.from" = "from";
-"Profile.myNFTs.youDontHave" = "You haven't NFT yet";
+"Profile.myNFTs.youDontHave" = "You don't have NFT yet";
 "Profile.myNFTs.youDontHaveFavorite" = "You haven't favorite NFT yet";
-"Profile.myNFTs.loadErrorUpdateProfile" = "Profile data couldn't be updated";
+"Profile.myNFTs.loadErrorUpdateProfile" = "Couldn't update Profile data";
 "Profile.myNFTs.loadErrorLoadProfile" = "Profile data couldn't be loaded";

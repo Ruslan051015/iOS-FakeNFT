@@ -32,7 +32,7 @@ class CatalogViewModel {
             switch result {
             case .success(let nfts):
                 self?.nfts = nfts
-            case .failure(_):
+            case .failure:
                 self?.showError?()
             }
             self?.isLoading = false

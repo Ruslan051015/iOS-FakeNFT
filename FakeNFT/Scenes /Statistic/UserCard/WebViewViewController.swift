@@ -23,7 +23,7 @@ final class WebViewViewController: UIViewController {
 		let button = UIButton()
 		
 		button.setImage(image, for: .normal)
-		button.tintColor = .textColor
+    button.tintColor = .ypBlack
 		button.addTarget(self, action: #selector(backButtonDidTap), for: .touchUpInside)
 		
 		return UIBarButtonItem(customView: button)

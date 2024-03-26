@@ -95,11 +95,11 @@ final class CatalogCollectionViewModel {
                             res.name.suffix(res.name.count - 1)
                             self.nameOfAuthor = res.author
                             self.nftDescription = res.description
-                        case .failure(_):
+                        case .failure:
                             self.showError?()
                         }
                     }
-                case .failure(_):
+                case .failure:
                     self.showError?()
                 }
             }

@@ -51,7 +51,7 @@ final class NftCollectionViewModel {
 			}
 
 			switch result {
-			case .success(_):
+			case .success:
 				let cellViewModel = nfts.first { item in
 					item.id == id
 				}
@@ -78,7 +78,7 @@ final class NftCollectionViewModel {
 			}
 
 			switch result {
-			case .success(_):
+			case .success:
 				let cellViewModel = nfts.first { item in
 					item.id == id
 				}

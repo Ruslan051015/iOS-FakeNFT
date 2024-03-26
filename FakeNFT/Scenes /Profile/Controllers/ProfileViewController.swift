@@ -1,10 +1,3 @@
-//
-//  ProfileViewController.swift
-//  FakeNFT
-//
-//  Created by Eugene Dmitrichenko on 20.02.2024.
-//
-
 import UIKit
 import Combine
 import Kingfisher
@@ -176,6 +169,7 @@ final class ProfileViewController: UIViewController {
   @objc
   private func userPageTapped() {
     let webController = ProfileWebViewController()
+    webController.hidesBottomBarWhenPushed = true
     if let website = self.website {
       webController.userSite = website
       self.navigationController?.pushViewController(webController, animated: true)

@@ -123,6 +123,7 @@ extension CatalogView: UITableViewDelegate {
     let id = viewModel.collectionViewId(index: indexPath)
     let view = CatalogNftCollectionView(nibName: nil, bundle: nil, id: id)
     navigationController?.pushViewController(view, animated: true)
+    navigationController?.navigationBar.tintColor = .ypBlack
   }
 }
 
